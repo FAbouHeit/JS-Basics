@@ -9,5 +9,5 @@ function formfunction(){
     let surname = document.forms["formname"]["surname"].value;
     let city = document.forms["formname"]["city"].value;
 
-    window.alert("Hello " + name + " " + surname + " from " + city );
+    window.alert("Hello " + name + "/n " + surname + "/nfrom " + city );
 }
