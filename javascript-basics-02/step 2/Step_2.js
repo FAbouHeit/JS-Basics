@@ -8,6 +8,11 @@
 // element.addEventListener("blur",theFunction());
 // element.onblur = theFunction();
 
+let a = document.querySelector("input");
+a.addEventListener("blur", ()=>{
+    theFunction();
+})
+
 function theFunction(){
     window.alert("Thank you for participating!");
 }
