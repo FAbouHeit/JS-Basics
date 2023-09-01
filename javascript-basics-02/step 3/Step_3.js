@@ -1,14 +1,10 @@
-// let x = document.getElementById("toHere");
-// let y = document.getElementById("name");
 
-// x = y;
-document.getElementById("toHere").textContent = document.getElementById("name").value;
+let div = document.createElement("div");
+// div.style.width = "100px";
+document.body.appendChild(div)
+// div.style.height = "100px";
+let a = document.querySelector("#name");
 
-// alert(x.textContent);
-
-function myFunction(){
-    document.getElementById("toHere").innerHTML = document.getElementById("name").value;
-    
-    // x=y;
-    // alert(x);
-}
+a.addEventListener("keyup", ()=>{
+    div.innerHTML = a.value;
+})
